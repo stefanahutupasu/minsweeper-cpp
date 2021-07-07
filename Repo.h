@@ -50,6 +50,18 @@ public:
 
         }
     }
+
+    void markMineStart(int i,char c)
+    {
+        for(int j=0;j<this->getCellList().size();j++)
+        {
+            if(this->getCellList()[j].getRow()==i&&this->getCellList()[j].getColumn()==c)
+            {this->cellList[j].setIsMine(true);
+                //this->cellList[j].setIsRevealed(true);
+            }
+
+        }
+    }
 };
 
 

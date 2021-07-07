@@ -52,6 +52,14 @@ utility
 QMessageBox
 -
 
+F:/e3-913-stefana-hutupasu/Model.cpp
+Model.h
+F:/e3-913-stefana-hutupasu/Model.h
+QString
+-
+utility
+-
+
 F:/e3-913-stefana-hutupasu/Model.h
 QTableView
 -
@@ -70,9 +78,17 @@ vector
 algorithm
 -
 
+F:/e3-913-stefana-hutupasu/Repo.cpp
+Repo.h
+F:/e3-913-stefana-hutupasu/Repo.h
+
 F:/e3-913-stefana-hutupasu/Repo.h
 Domain.h
 F:/e3-913-stefana-hutupasu/Domain.h
+
+F:/e3-913-stefana-hutupasu/Service.cpp
+Service.h
+F:/e3-913-stefana-hutupasu/Service.h
 
 F:/e3-913-stefana-hutupasu/Service.h
 utility
@@ -145,6 +161,10 @@ F:/qt/6.1.0/msvc2019_64/include/QtCore/qsize.h
 F:/qt/6.1.0/msvc2019_64/include/QtCore/QSizeF
 qsize.h
 F:/qt/6.1.0/msvc2019_64/include/QtCore/qsize.h
+
+F:/qt/6.1.0/msvc2019_64/include/QtCore/QString
+qstring.h
+F:/qt/6.1.0/msvc2019_64/include/QtCore/qstring.h
 
 F:/qt/6.1.0/msvc2019_64/include/QtCore/qabstractitemmodel.h
 QtCore/qhash.h

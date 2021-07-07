@@ -36,6 +36,20 @@ int main(int argc, char *argv[]) {
     for(int i=1;i<9;i++)
         for(char c='A';c<'A'+8;c++)
         repo.addCell(Cell(i,c,false,false,0));
+        for(int i =1;i<mines+1;i++)
+        {
+            int ok=0;
+            while(!ok)
+            {
+                int r=rand()%7+1;
+                char c = 'A' + rand()%7;
+                for(auto x:repo.getCellList()) if(x.getRow()==r&&x.getColumn()==c) {
+                    if(x.isMine1())break;
+                    else {repo.markMineStart(r,c);ok=1;}
+                }
+
+            }
+        }
     Service service(repo);
     for(auto e: service.getPlayerList())
     {auto* m = new MainWindow(service, e);
