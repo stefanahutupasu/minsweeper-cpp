@@ -62,6 +62,14 @@ public:
 
         }
     }
+
+    void markRevealed(Cell& c)
+    {
+        for(int i=0;i<this->getCellList().size();i++)
+            if(c.getColumn()==this->getCellList()[i].getColumn() && c.getRow()==this->getCellList()[i].getRow())
+                this->cellList[i].setIsRevealed(true);
+    }
+
 };
 
 

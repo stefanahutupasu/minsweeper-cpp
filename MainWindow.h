@@ -80,7 +80,12 @@ public:
                     msgBox.exec();
                     this->destroy();
                 }
-                else return;
+                else
+                {
+                    //this->service.setAdjacent(c);
+                    this->service.markRevealed(c);
+
+                }
 
 
             }

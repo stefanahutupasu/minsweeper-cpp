@@ -75,6 +75,8 @@ QVariant Model::data(const QModelIndex &index, int role) const {
         if(b.getRow()==row+1 && b.getColumn()=='A'+column)
         {
             if(b.isRevealed1()&&b.isMine1()&&role == Qt::BackgroundRole) return QColor("red");
+            if(b.isRevealed1()&&!b.isMine1()&&role == Qt::BackgroundRole) return QColor("light blue");
+
             if(role == Qt::BackgroundRole && !b.isRevealed1())return QColor("light green");
                 if(b.isMine1()&&b.isRevealed1()) return QVariant("*");
             if(b.isRevealed1()==0) return QVariant();

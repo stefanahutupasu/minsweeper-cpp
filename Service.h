@@ -38,5 +38,16 @@ public:
         this->repo.markMine(r,c);
         this->notify();
     }
+
+    void setAdjacent(Cell& c)
+    {
+        this->repo.setAdjacentMines(c);
+    }
+
+    void markRevealed(Cell& c)
+    {
+        this->repo.markRevealed(c);
+        this->notify();
+    }
 };
 #endif //RETAKE_SERVICE_H
