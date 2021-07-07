@@ -82,7 +82,7 @@ public:
                 }
                 else
                 {
-                    //this->service.setAdjacent(c);
+                    this->service.setAdjacent(c);
                     this->service.markRevealed(c);
 
                 }

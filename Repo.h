@@ -34,8 +34,17 @@ public:
 
     void setAdjacentMines(Cell& c)
     {
-        int m;
-        c.setAdjacentMines(m);
+        int m=0;
+        for(auto ac:this->getCellList())
+            if(ac.getRow()!=c.getRow()&&ac.getColumn()!=c.getColumn())
+                if(ac.isMine1())
+                if(abs(ac.getColumn()-c.getColumn()==0)||abs(ac.getColumn()-c.getColumn()==1))
+                    if(abs(ac.getRow()-c.getRow()==0)||abs(ac.getRow()-c.getRow()==1))
+                        m+=1;
+
+        for(int i=0;i<this->getCellList().size();i++)
+            if(this->getCellList()[i].getRow()==c.getRow()&&this->getCellList()[i].getColumn()==c.getColumn())
+                this->cellList[i].setAdjacentMines(m);
     }
 
 
